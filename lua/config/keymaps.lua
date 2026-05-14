@@ -29,3 +29,12 @@ vim.keymap.set('n', '<C-n>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- Switch NeoVim's builtin file explorer
 vim.keymap.set('n', '<leader>cd', vim.cmd.Ex)
+
+-- Remap hjkl to comfortable use for dvorak
+vim.keymap.set('n', 'h', 'h')
+vim.keymap.set('n', 't', 'j')
+vim.keymap.set('n', 'n', 'k')
+vim.keymap.set('n', 's', 'l')
+
+-- Make it easy to quit vim (Do not consider whether save files or not)
+vim.keymap.set('n', '<leader>qu', ':q<CR>')
