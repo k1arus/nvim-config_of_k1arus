@@ -38,3 +38,7 @@ vim.keymap.set('n', 's', 'l')
 
 -- Make it easy to quit vim (Do not consider whether save files or not)
 vim.keymap.set('n', '<leader>qu', ':q<CR>')
+
+-- Rename specified word which the LSP server knows
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename)
+
