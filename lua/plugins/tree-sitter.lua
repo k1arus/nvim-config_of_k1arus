@@ -12,6 +12,7 @@ return {
                 "c",
                 "cpp",
                 "rust",
+                "haskell"
             },
             auto_install = false,
         }
